@@ -89,6 +89,93 @@ const questions = [
             {text: "Chamomile tea", correct: false},
         ]  
     }
+];
 
+const questionElement = document.getElementById("question");
+const answersButtonElement = document.getElementById("answers-button");
+const nextButtonElement = document.getElementById("next-btn");
 
-]
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButtonElement.innerHTML = "Next";
+    showQuestion();
+}
+
+function showQuestion() {
+    resetState();
+
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answersButtonElement.appendChild(button);
+
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAns);
+    });
+}
+
+function resetState() {
+    nextButtonElement.style.display = "none";
+    while(answersButtonElement.firstChild){
+        answersButtonElement.removeChild(answersButtonElement.firstChild);
+    }
+}
+
+function selectAns(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect){
+        selectedBtn.classList.add("correct");
+        score++;
+    }
+    else{
+        selectedBtn.classList.add("incorrect");
+    }
+
+    Array.from(answersButtonElement.children).forEach(button => {
+        if (button.dataset.correct === "true"){
+            button.classList.add("correct");
+        }
+            button.disabled = true;
+    });
+    nextButtonElement.style.display = "block";
+}
+
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButtonElement.innerHTML = "Play Again";
+    nextButtonElement.style.display = "block";
+}
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    }
+    else {
+        showScore();
+    }
+}
+
+nextButtonElement.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    }
+    else {
+        startQuiz();
+    }
+})
+
+startQuiz();
