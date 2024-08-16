@@ -110,14 +110,14 @@ function showQuestion() {
 
     let currentQuestion = questions[currentQuestionIndex];
     // let questionNo = currentQuestionIndex + 1;
-    const randomQuestion= Math.floor(Math.random()*questions.length)+1;
     
-    
-
     questionElement.innerHTML ="*   " + currentQuestion.question;
-    
-    
 
+    function getRandomQuestions() {
+    const randomQuestion= Math.floor(Math.random()*questions.length);
+    questions[randomQuestion];
+}
+    
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
