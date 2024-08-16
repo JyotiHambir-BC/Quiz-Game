@@ -1,3 +1,4 @@
+// All questions
 const questions = [
     {
         question: "What is the most consumed fruit in the world?",
@@ -95,26 +96,18 @@ const questionElement = document.getElementById("question");
 const answersButtonElement = document.getElementById("answers-button");
 const nextButtonElement = document.getElementById("next-btn");
 
-let haveIt = [];
+let totalList = [];
 let currentQuestionIndex = 0;
 let score = 0;
-
-function startQuiz(){
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButtonElement.innerHTML = "Next";
-    haveIt = [];
-    showQuestion();
-}
 
 function generateUniqueRandom(maxNr) {
     //Generate random number
     let random = Math.floor(Math.random()*maxNr);
-    if(!haveIt.includes(random)) {
-        haveIt.push(random);
+    if(!totalList.includes(random)) {
+        totalList.push(random);
         return random;
     } else {
-        if(haveIt.length < maxNr) {
+        if(totalList.length < maxNr) {
          return  generateUniqueRandom(maxNr);
         } 
     }
@@ -151,6 +144,7 @@ function resetState() {
 }
 
 function selectAns(e) {
+    nextButtonElement.innerHTML = "Next";
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect){
@@ -177,8 +171,26 @@ function showScore() {
     nextButtonElement.style.display = "block";
 }
 
+function startQuiz() {
+    resetState();
+    questionElement.innerHTML = `Are you Ready? Let's Start the Game!`;
+    nextButtonElement.innerHTML = "Start";
+    nextButtonElement.style.display = "block";
+    resetValues();
+}
+
+function resetValues()
+{
+    currentQuestionIndex = 0;
+    score = 0;
+    totalList = [];
+}
+
 function handleNextButton() {
-    currentQuestionIndex++;
+    if(nextButtonElement.innerHTML == "Next")
+    {
+        currentQuestionIndex++;
+    }
     if (currentQuestionIndex < questions.length) {
         showQuestion();
     }
