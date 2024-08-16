@@ -62,4 +62,10 @@ body {
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #508797;
+    color: #fff;
 }
