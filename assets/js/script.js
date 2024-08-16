@@ -95,6 +95,7 @@ const questionElement = document.getElementById("question");
 const answersButtonElement = document.getElementById("answers-button");
 const nextButtonElement = document.getElementById("next-btn");
 
+let haveIt = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -102,22 +103,32 @@ function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
     nextButtonElement.innerHTML = "Next";
+    haveIt = [];
     showQuestion();
+}
+
+function generateUniqueRandom(maxNr) {
+    //Generate random number
+    let random = Math.floor(Math.random()*maxNr);
+    if(!haveIt.includes(random)) {
+        haveIt.push(random);
+        return random;
+    } else {
+        if(haveIt.length < maxNr) {
+         return  generateUniqueRandom(maxNr);
+        } 
+    }
 }
 
 function showQuestion() {
     resetState();
 
-    let currentQuestion = questions[currentQuestionIndex];
-    // let questionNo = currentQuestionIndex + 1;
+    const randomQuestion= generateUniqueRandom(questions.length);
     
+    let currentQuestion = questions[randomQuestion];
     questionElement.innerHTML ="*   " + currentQuestion.question;
 
-    function getRandomQuestions() {
-    const randomQuestion= Math.floor(Math.random()*questions.length);
-    questions[randomQuestion];
-}
-    
+//    
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -130,6 +141,7 @@ function showQuestion() {
         button.addEventListener("click", selectAns);
     });
 }
+
 
 function resetState() {
     nextButtonElement.style.display = "none";
