@@ -109,8 +109,14 @@ function showQuestion() {
     resetState();
 
     let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    // let questionNo = currentQuestionIndex + 1;
+    const randomQuestion= Math.floor(Math.random()*questions.length)+1;
+    
+    
+
+    questionElement.innerHTML ="*   " + currentQuestion.question;
+    
+    
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
