@@ -22,7 +22,7 @@ body {
     background: rgba(239, 240, 241, 0.3);
     width: 90%;
     max-width: 500px;
-    margin: 100px auto 0;
+    margin: 50px auto 50px;
     border-radius: 10px;
     padding: 30px;
 }
@@ -49,6 +49,8 @@ body {
     font-size: 15px;
     color: #fff;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
@@ -88,9 +90,9 @@ body {
 }
 
 .correct {
-    background-color: #9aeabc;
+    background-color: #13d868;
 }
 
 .incorrect {
-    background-color: #ff9393;
+    background-color: #da9999;
 }
