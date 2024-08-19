@@ -2,7 +2,7 @@
 
 [View the live Project here](https://jyotihambir-bc.github.io/Quiz-Game/)
 
-Quiz App made for entertainment with fun questions about general knowledge of the Food. While playing the app someone can increase his/her knowledge about the food.
+Quiz App made for entertainment with general knowledge questions about of the Food. While playing the app someone can increase his/her knowledge about the worldwide food.
 
 ![Mockup](assets/documents/mockup/mockup.PNG)
 
@@ -85,7 +85,7 @@ Quiz App made for entertainment with fun questions about general knowledge of th
     - [Balsamiq](https://balsamiq.com/) was used to create a wireframe during design process.
   
   - ## Testing
-
+      
   - ### Validator Testing
 
     - [HTML Validator](https://validator.w3.org/)
@@ -98,7 +98,7 @@ Quiz App made for entertainment with fun questions about general knowledge of th
       - ![JavaScript result](assets/documents/validation-results/js-result.PNG)
 
   - ### Test Cases and Results
-    - ![Test Result]()
+    - ![Test Result](assets/documents/test-cases-result/Test-cases-result.png)
 
   - ## Deployment
 
