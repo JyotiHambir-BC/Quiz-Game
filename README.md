@@ -9,6 +9,8 @@ Quiz App made for entertainment with general knowledge questions about of the Fo
   - ## User Experience (UX)
   
   - ### User Stories
+    - [User Stories](assets/documents/user-story-images/User-story-image.PNG)
+
   - #### Start Page
     1. As a User I can see the Start button and welcome message so that I can start the game after clicked Start button.
 
@@ -125,5 +127,7 @@ Quiz App made for entertainment with general knowledge questions about of the Fo
     - Questions are taken from [KwizzBit](https://kwizzbit.com/food-and-drink-quiz-questions-and-answers/)
 
  - ### Acknowledgments
+
+    - Pending
 
   
