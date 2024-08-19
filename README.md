@@ -8,7 +8,7 @@ Quiz App made for entertainment with fun questions about general knowledge of th
 
   - ## User Experience (UX)
   
-  - ### Use Stories
+  - ### User Stories
   - #### Start Page
     1. As a User I can see the Start button and welcome message so that I can start the game after clicked Start button.
 
@@ -118,7 +118,7 @@ Quiz App made for entertainment with fun questions about general knowledge of th
 
   - ### Code
     - App Idea and code idea was taken from [GreasStack](https://www.youtube.com/watch?v=PBcqGxrr9g8)
-    - Developer written the code for randomly and unique (no repeatation) questions sequense.
+    - Developer written own code for randomly and unique (no repeatation) questions sequense.
 
  - ### Media
     - images was downloaded from [Freepik](https://www.freepik.com/free-photos-vectors/blue-question-mark)
