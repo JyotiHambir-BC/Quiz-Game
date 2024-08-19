@@ -88,17 +88,14 @@ Quiz App made for entertainment with fun questions about general knowledge of th
 
   - ### Validator Testing
 
-    - [HTML Validator]()
-        - Result - index.html
-        ![html index result]()
-        - Result - tour.html
-        ![html tour result]()
-        - Result - contact.html
-        ![html contact result]()
-
-
+    - [HTML Validator](https://validator.w3.org/)
+      - ![HTML result](assets/documents/validation-results/html-result.PNG)
+        
     - [CSS Validator]()
-       `-![CSS result]()
+       - ![CSS result](assets/documents/validation-results/css-result.PNG)
+
+    - [JavaScript Validator](https://jshint.com/)
+      - ![JavaScript result](assets/documents/validation-results/js-result.PNG)
 
   - ### Test Cases and Results
     - ![Test Result]()
