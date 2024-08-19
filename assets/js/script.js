@@ -100,8 +100,10 @@ let totalList = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
+//Generate random number
+
 function generateUniqueRandom(maxNr) {
-    //Generate random number
+    
     let random = Math.floor(Math.random()*maxNr);
     if(!totalList.includes(random)) {
         totalList.push(random);
@@ -112,16 +114,17 @@ function generateUniqueRandom(maxNr) {
         } 
     }
 }
+// For Game page questions style display
 
 function showQuestion() {
     resetState();
 
-    const randomQuestion= generateUniqueRandom(questions.length);
-    
+    const randomQuestion= generateUniqueRandom(questions.length);    
     let currentQuestion = questions[randomQuestion];
     questionElement.innerHTML ="*   " + currentQuestion.question;
 
-//    
+// Answer button options code
+   
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -135,13 +138,6 @@ function showQuestion() {
     });
 }
 
-
-function resetState() {
-    nextButtonElement.style.display = "none";
-    while(answersButtonElement.firstChild){
-        answersButtonElement.removeChild(answersButtonElement.firstChild);
-    }
-}
 
 function selectAns(e) {
     nextButtonElement.innerHTML = "Next";
@@ -164,6 +160,15 @@ function selectAns(e) {
     nextButtonElement.style.display = "block";
 }
 
+// For invisible Next button
+function resetState() {
+    nextButtonElement.style.display = "none";
+    while(answersButtonElement.firstChild){
+        answersButtonElement.removeChild(answersButtonElement.firstChild);
+    }
+}
+
+// score page score and button display 
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
@@ -171,6 +176,7 @@ function showScore() {
     nextButtonElement.style.display = "block";
 }
 
+// start page welcome message and button display
 function startQuiz() {
     resetState();
     questionElement.innerHTML = `Are you Ready? Let's Start the Game!`;
