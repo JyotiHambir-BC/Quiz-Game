@@ -4,7 +4,7 @@
 
 description about projects
 
-![Mockup]()
+![Mockup](assets/documents/mockup/mockup.PNG)
 
 ## User Experience (UX)
   - ### Use Stories
@@ -12,49 +12,23 @@ description about projects
 ## Features
 
   - ### Existing Features
-    - _01 Navigation Bar_
-    ![Navbar]()
+   
+    - _01 Start Page Images_
+    ![startPage-images](assets/documents/game-pages-images/start-page-img.PNG)
 
 
-    - _02 Tagline_
-    ![Tagline]()
 
 
-    - _03 Home Page Images_
-    ![homepage-images]()
+    - _02 Game Page_
+        ![Game-page](assets/documents/game-pages-images/game-page-img.PNG)
+        ![Game-page](assets/documents/game-pages-images/game-page-img2.PNG)
 
 
-    - _04 Testimonials_
-    ![Tm1]()
-    ![TM2]()
-    ![TM3]()
 
-
-    - _05 Footer_
-      - The Footer is featured all all three pages. It having links for Company's social networking site. Also have the Team's Copyright Text to the bottom-right site of the footer.
-      ![footer]()
-
-
-    - _06 Tour Page_
-        ![Tour-page]()
-
-
-    - _07 Contact Page - 'Visit Our Office'_
+    - _03 Score Page_
+         ![Score-page](assets/documents/game-pages-images/score-page-img.PNG)
       - We provided the address of the Company so user can visit the Company Site if they want.
-      
-      - ![visit-our-office]()
-
-    - _08 Contact Page - 'Let's Talk'_
-      - We provided the registered phone and Fax number to contact the Company.
-      - ![let's-talk]()
-
-    - _09 Contact Page - 'Email-Us'_
-      - We provided the Company's registered email address for User to contact the Company through Email.
-      - ![Email-us]()
-
-    - _10 Form - 'Drop us a line'_
-      - We have provided the form for get the feedback from the Users for give us any suggetions or any comments.
-      - ![form]()
+   
 
 ### Features which could be implemented in future
     - _Image Details_
