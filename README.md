@@ -2,7 +2,7 @@
 
 [View the live Project here](https://jyotihambir-bc.github.io/Quiz-Game/)
 
-description about projects
+Description about projects
 
 ![Mockup](assets/documents/mockup/mockup.PNG)
 
@@ -30,25 +30,30 @@ description about projects
       - We provided the address of the Company so user can visit the Company Site if they want.
    
 
-### Features which could be implemented in future
+  - ### Features which could be implemented in future
     - _Image Details_
       - A tour page having images for booking the places where we are going to update details in future.
 
 
- ## Design
+  - ## Design
     - ### Imagery
+    
     - ### Colour Scheme
+
     - ### Typography
       - Google font
+
     - ### Wireframes
-      - #### Home Page Wireframes
-        ![home]()
+     
+      - #### Start Page Wireframes
 
-      - #### Tour Page Wireframes
-        ![Tour-page]()
+        ![start-page](assets/documents/wireframe/start-page.PNG)
 
-      - #### Contact Page Wireframes
-        ![Contact-page]()
+      - #### Game Page Wireframes
+        ![game-page](assets/documents/wireframe/game-page.PNG)
+
+      - #### Score Page Wireframes
+        ![score-page](assets/documents/wireframe/score-page.PNG)
   
   
 ## Technology Used
@@ -56,11 +61,10 @@ description about projects
 ### Language Used
     - [HTML5]()
     - [CSS3]()
+    - [JavaScript]()
 
 ### Frameworks, Libraries
     - [Google Font]() 
-    - [Font Awesome]() Used to add icons for UX purposes.
-    - [bootsrap 5.3.2]() Used to add style in HTML code
     - [Balsamiq]() was used to create a wireframe during design process.
   
 ## Testing
