@@ -7,7 +7,7 @@
 
 body {
     background-color: #001e4d;
-    background-image:url("../images/img-for-ques-ans.PNG");
+    background-image:url("../images/hero-image.PNG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,3 +17,95 @@ body {
     
 }
 
+.container {
+    background: #fff;
+    background: rgba(239, 240, 241, 0.3);
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto 50px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.container h1 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+            
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.answers-button {
+    display: flex;
+    justify-content: center;   
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px 0;
+    margin: 10px 0;
+    /* text-align: left; */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #000;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #fff;
+    color: #000;
+    font-weight: 400;
+    width: 100px;
+    border: none;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+}
+
+#next-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+/* --------Classes are in script.js file---------- */
+
+.correct {
+    background-color: #13d868;
+}
+
+.incorrect {
+    background-color: #da9999;
+}
