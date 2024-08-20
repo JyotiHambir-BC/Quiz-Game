@@ -6,6 +6,17 @@ Quiz App made for entertainment with general knowledge questions about of the Fo
 
 ![Mockup](assets/documents/mockup/mockup.PNG)
 
+
+  - ## Index – Table of Contents
+  * [User Experience (UX)](#user-experience-ux)
+  * [Features](#features)
+  * [Design](#design)
+  * [Technology Used](#technology-used)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+
+
   - ## User Experience (UX)
   
   - ### User Stories
@@ -50,7 +61,9 @@ Quiz App made for entertainment with general knowledge questions about of the Fo
 
   - ### Features which could be implemented in future
     - _Game Page_
-      - Currently the game containing only 10 questions, in future I am going to add more questions to make the game more interesting.
+      - Currently the game containing only 10 questions, in future I am going to add more questions to make the game more interesting. 
+      - Also going to add some animation which will create pop-up when we click correct and incorrect answer.
+      - Screen reader to be added for visually imparaired players.
 
 
   - ## Design
@@ -123,11 +136,13 @@ Quiz App made for entertainment with general knowledge questions about of the Fo
     - Developer written own code for randomly and unique (no repeatation) questions sequense.
 
  - ### Media
-    - images was downloaded from [Freepik](https://www.freepik.com/free-photos-vectors/blue-question-mark)
+    - Hero images was downloaded from [Freepik](https://www.freepik.com/free-photos-vectors/blue-question-mark)
     - Questions are taken from [KwizzBit](https://kwizzbit.com/food-and-drink-quiz-questions-and-answers/)
 
  - ### Acknowledgments
 
-    - Pending
+    - Thank you my facilitator Elaine Roche who supported me in this project with suggestion in coding and how to make the app responsive. She took regular followup and helped with any road blocks came in this project. 
+    - Thank you Coding Coach Mark Briscoe who guided me in coding with showing live example of writing a clean code and answered all coding queries patiently and provide understandable solutions. 
+
 
   
