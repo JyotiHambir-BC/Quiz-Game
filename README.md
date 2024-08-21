@@ -106,7 +106,7 @@ Quiz App made for entertainment with general knowledge questions about of the Fo
     - [HTML Validator](https://validator.w3.org/)
       - ![HTML result](assets/documents/validation-results/html-result.PNG)
         
-    - [CSS Validator]()
+    - [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
        - ![CSS result](assets/documents/validation-results/css-result.PNG)
 
     - [JavaScript Validator](https://jshint.com/)
